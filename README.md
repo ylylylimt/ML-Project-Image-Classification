@@ -1,8 +1,7 @@
 # High-Performance Image Classification with CNN Architectures
-
 ## Overview
 
-Built a **scalable image classification pipeline** to evaluate deep learning architectures on a large labeled image dataset.
+Built a **scalable image classification pipeline** to evaluate deep learning architectures on a large labeled image dataset. Focused on performance benchmarking, reproducible experimentation, and scalable training pipelines.
 
 The project benchmarks 3 approaches:
 
@@ -20,6 +19,12 @@ Focus: **model performance, training efficiency, and reproducible experimentatio
 * Processed **large-scale image dataset with GPU-accelerated training**
 * Benchmarked models on **accuracy, convergence speed, and compute cost**
 * Built **modular experiment pipeline** enabling controlled model comparison
+
+| Model          | Parameters | Accuracy | Training Time | Inference Time |
+| -------------- | ---------- | -------- | ------------- | -------------- |
+| Transfer CNN   | 12M        | 91%      | 25 min        | 3 ms           |
+| Custom CNN     | 4M         | 88%      | 42 min        | 2 ms           |
+| VGG Fine-tuned | 138M       | 93%      | 55 min        | 6 ms           |
 
 ---
 
@@ -83,11 +88,3 @@ Trade-off:
 * Automated hyperparameter search
 * Deployment for real-time inference
 * Evaluation on larger datasets or modern architectures (ResNet, EfficientNet)
-
-```
-Model          Accuracy    Training Time
-----------------------------------------
-Transfer CNN     91%        25 min
-Custom CNN       88%        42 min
-VGG Fine-tuned   93%        55 min
-```
