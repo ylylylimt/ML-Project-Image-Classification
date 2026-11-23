@@ -1,0 +1,18 @@
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Large artifacts (datasets, trained weights)
+data/
+*.h5
+*.keras
+*.pt
+*.pth
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
